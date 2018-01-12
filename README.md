@@ -4,10 +4,14 @@ Desarrollo de sitio web
 
 Para su funcionameinto se debera considerar las siguientes condiciones:
 
-## Configuracion
+## Importar Base de Datos
 
-No plica
-   
+La base de datos se encuentra alojada en la siguiente dirección
+
+    gst-admin\data\db_gst_go.sql
+    
+Para importar la base de datos, se debera crear desde el manejador de base de datos (ejemplo: phpmyadmin)
+una base de datos con el nombre de __db_gst_go__ y posterior mente importar el script SQL que se proporciona
 
 ## Conexión a mySQL
 
@@ -19,7 +23,3 @@ debera sustituir los datos por los da cada servidor de las siguientes variables:
     $this->Servidor  = "localhost";
     $this->Usuario 	 = "root";
     $this->Clave	 = "";
-    
-La base de datos se encuentra alojada en la siguiente dirección
-
-    gst-admin\data\db_gst_go.sql
