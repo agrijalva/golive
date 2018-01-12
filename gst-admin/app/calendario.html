@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Admin | Calendario</title>
+        <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+        
+        <!-- bootstrap 3.0.2 -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!-- font Awesome -->
+        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <!-- Ionicons -->
+        <link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />        
+        <!-- Theme style -->
+        <link href="css/AdminLTE.css" rel="stylesheet" type="text/css" />
+        <!-- daterange picker -->
+        <link href="css/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" />
+
+        <!-- Style Personalizados -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body class="skin-blue">
+        <!-- header logo: style can be found in header.less -->
+        <header class="header">
+            <a href="index.html" class="logo">
+                <!-- Add the class icon to your logo image or logo icon to add the margining -->
+                Admin
+            </a>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top" role="navigation">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="navbar-btn sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <div class="navbar-right">
+                    <ul class="nav navbar-nav">
+                        <!-- Messages: style can be found in dropdown.less-->
+                        <li class="dropdown messages-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-envelope"></i>
+                            </a>                            
+                        </li>
+                        <!-- Notifications: style can be found in dropdown.less -->
+                        <li class="dropdown notifications-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-warning"></i>
+                            </a>                            
+                        </li>
+                        <!-- Tasks: style can be found in dropdown.less -->
+                        <li class="dropdown tasks-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-tasks"></i>
+                            </a>                            
+                        </li>
+                        <!-- User Account: style can be found in dropdown.less -->
+                        <li class="dropdown user user-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="glyphicon glyphicon-user"></i>
+                                <span><span class="dUserName">Jane Doe</span> <i class="caret"></i></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <!-- User image -->
+                                <li class="user-header bg-light-blue">
+                                    <img src="img/avatar3.png" class="img-circle img-usr" alt="User Image" />
+                                    <p>
+                                        <span class="dUserName">Jane Doe</span> - Web Admin
+                                        <small class="dEmpresa">Member since Nov. 2012</small>
+                                    </p>
+                                </li>
+                                <!-- Menu Body -->
+                                <li class="user-body">
+                                    <div class="col-xs-8 text-center">
+                                        <a href="#" class="dSistema"></a>
+                                    </div>
+                                    <div class="col-xs-4 text-center">
+                                        <a href="#" class="dVersion"></a>
+                                    </div>
+                                </li>
+                                <!-- Menu Footer-->
+                                <li class="user-footer">
+                                    <div class="pull-left">
+                                        <a href="#" class="btn btn-default btn-flat">Perfil</a>
+                                    </div>
+                                    <div class="pull-right">
+                                        <a href="../control/salir.php" class="btn btn-default btn-flat">Cerrar Sesión</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="wrapper row-offcanvas row-offcanvas-left">
+            <!-- Left side column. contains the logo and sidebar -->
+            <aside class="left-side sidebar-offcanvas">                
+                <!-- sidebar: style can be found in sidebar.less -->
+                <section class="sidebar">
+                    <!-- Sidebar user panel -->
+                    <div class="user-panel">
+                        <div class="pull-left image">
+                            <img src="img/avatar3.png" class="img-circle img-usr" alt="User Image" />
+                        </div>
+                        <div class="pull-left info">
+                            <p class="dSaludo">Hello</p>
+
+                            <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+                        </div>
+                    </div>
+                    <!-- search form -->
+                    <!-- <form action="#" method="get" class="sidebar-form">
+                        <div class="input-group">
+                            <input type="text" name="q" class="form-control" placeholder="Search..."/>
+                            <span class="input-group-btn">
+                                <button type='submit' name='seach' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
+                            </span>
+                        </div>
+                    </form> -->
+                    <!-- /.search form -->
+                    <!-- sidebar menu: : style can be found in sidebar.less -->
+                    <ul class="sidebar-menu">
+                        <li>
+                            <a href="index.html">
+                                <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="flyer.html">
+                                <i class="fa fa-picture-o"></i> <span>Flyer</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="actividades.html">
+                                <i class="fa fa-bolt"></i> <span>Actividades</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="galeria.html">
+                                <i class="fa fa-camera"></i> <span>Galeria</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="guias.html">
+                                <i class="fa fa-male"></i> <span>Guias</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="calendario.html">
+                                <i class="fa fa-calendar"></i> <span>Eventos</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </section>
+                <!-- /.sidebar -->
+            </aside>
+
+            <!-- Right side column. Contains the navbar and content of the page -->
+            <aside class="right-side">                
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>
+                        Eventos
+                        <small>Programación de Actividades</small>
+                    </h1>
+                    <ol class="breadcrumb">
+                        <li><a href="index.html"><i class="fa fa-dashboard"></i> Home</a></li>
+                        <li><a href="#">Eventos</a></li>
+                        <li class="active">Programación</li>
+                    </ol>
+                </section>
+
+                <!-- Main content -->
+                <section class="content">
+                
+                    <div class="row">
+                        <div class="col-md-4" id="viewDetail">
+                            <div class="box box-primary">
+                                <div class="box-header">
+                                    <h3 class="box-title">Crear Evento</h3>
+                                </div>
+                                <div class="box-body">
+                                    <form name="frmEvento" id="frmEvento">
+                                        <input type="hidden" name="~action" id="frm-action" value="insert">         
+                                        <input type="hidden" name="~table"  value="tbl_evento">
+
+                                        <div class="btn-group" style="width: 100%; margin-bottom: 10px;">
+                                            <input type="hidden" name="campo[act_clave]" value="0" id="act_clave">
+                                            <button type="button" id="color-chooser-btn" class="btn btn-default btn-block btn-sm dropdown-toggle" data-toggle="dropdown">Tipo de Actividad <span class="caret"></span></button>
+                                            <ul class="dropdown-menu" id="color-chooser">
+                                                <li><a class="text-aqua" href="#" data-activ="1"><i class="fa fa-square"></i> Montañismo</a></li>
+                                                <li><a class="text-green" href="#" data-activ="2"><i class="fa fa-square"></i> Trekking</a></li>
+                                                <li><a class="text-yellow" href="#" data-activ="3"><i class="fa fa-square"></i> Escalada</a></li>
+                                                <li><a class="text-purple" href="#" data-activ="4"><i class="fa fa-square"></i> Entrenamiento</a></li>
+                                            </ul>
+                                        </div><!-- /btn-group -->                                   
+
+                                        <div class="input-group">  
+
+                                            <div class="input-group-btn">
+                                                <button data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button">Selecciona <span class="fa fa-caret-down"></span></button>
+                                                <ul class="dropdown-menu" id="menu-actividades">
+                                                    <li><a href="#">Selecciona un tipo de actividad</a></li>
+                                                </ul>
+                                            </div>
+
+                                            <input id="new-event" name="campo[eve_nombre]" type="text" class="form-control" placeholder="Seleccione un tipo de Actividad" disabled="disabled">
+                                            
+                                        </div><!-- /input-group -->
+
+                                        <!-- Date and time range -->
+                                        <div class="form-group">
+                                            <label>Rango de Fecha y Hora:</label>
+                                            <div class="input-group">
+                                                <div class="input-group-addon">
+                                                    <i class="fa fa-clock-o"></i>
+                                                </div>
+                                                <input type="text" class="form-control pull-right" id="reservationtime" name="campo[eve_date]" />
+                                            </div><!-- /.input group -->
+                                        </div><!-- /.form group -->
+
+                                        <button class="btn btn-primary" id="submit" type="button">Agregar Actividad</button>
+                                    </form>
+
+                                </div>
+                            </div>                            
+                        </div><!-- /.col -->
+                        <div class="col-md-8">
+                            <div class="row" id="content"></div>
+                        </div><!-- /.col -->
+                    </div><!-- /.row -->  
+
+                </section><!-- /.content -->
+            </aside><!-- /.right-side -->
+        </div><!-- ./wrapper -->
+
+
+        <!-- jQuery 1.11.2 -->
+        <script src="js/jquery-1.11.2.js"></script>
+        
+        <!-- jQuery UI 1.10.3 -->
+        <script src="js/jquery-ui-1.10.3.min.js" type="text/javascript"></script>
+        <!-- Bootstrap -->
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <!-- AdminLTE App -->
+        <script src="js/AdminLTE/app.js" type="text/javascript"></script>
+
+
+        <!-- fullCalendar -->
+        <script src="js/plugins/fullcalendar/fullcalendar.min.js" type="text/javascript"></script>
+        <!-- date-range-picker -->
+        <script src="js/plugins/daterangepicker/daterangepicker.js" type="text/javascript"></script>
+        <!-- Incluimos scripts de alimentacion -->
+        <script type="text/javascript" src="../js/backbone/user.js"></script>
+        <script type="text/javascript" src="../js/backbone/functions.js"></script>
+        <script type="text/javascript" src="../js/backbone/base64.js"></script>
+        <script type="text/javascript" src="../js/backbone/calendario.js"></script>
+
+        <!-- Page specific script -->
+        <script type="text/javascript">
+        function textToInput(text){
+            $("#new-event").val(text);
+        }
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,69 @@
+<div class="box box-warning">
+    <div class="box-header">
+        <h3 class="box-title" id="info-evento">Nombre del Evento</h3>
+    </div>
+    <div class="box-body">
+        <div class="row">
+            <div class="col-sm-12">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Auto</th>
+                            <th>Lugares</th>
+                        </tr>                        
+                    </thead>
+                    <tbody id="info-autos"></tbody>
+                </table>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <p class="lead">Resumen</p>
+                <div class="table-responsive">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th style="width:50%">Autos disponibles:</th>
+                                <td id="info-auto-disponible">0</td>
+                            </tr>
+                            <tr>
+                                <th>Lugares en total:</th>
+                                <td id="info-lugares-total">0</td>
+                            </tr>
+                            <tr>
+                                <th>Lugares reservados:</th>
+                                <td id="info-lugares-reservados">0</td>
+                            </tr>
+                            <tr>
+                                <th>Lugares Disponibles:</th>
+                                <td id="info-lugares-disponibles">0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <p class="lead">Reservaciones</p>
+                <div class="table-responsive">
+                    <table class="table">
+                        <tbody id="info-reservaciones"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+        <button class="btn btn-primary" id="addCarrito" type="button">Agregar un auto más</button>
+        <button class="btn btn-danger" id="cancel" type="button" onclick="location.reload();">Cancelar</button>
+        <button class="btn btn-warning" id="archivar" type="button" onclick="archivar(1);">Archivar</button>
+    </div>
+</div>

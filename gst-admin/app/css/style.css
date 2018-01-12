@@ -1,0 +1,73 @@
+.table-striped tbody tr td span{
+	cursor:pointer;
+}
+
+.row label{
+	font-weight: normal !important;
+}
+
+.margen-top{
+	margin-top: 10px;
+}
+
+.rad-style label{
+	font-size: 12px;
+	padding-right: 10px;
+}
+
+.italic{
+	font-style: italic;
+}
+
+.form-group-te{
+	padding-bottom: 5px;
+}
+
+.chikita{ /*Texto*/
+	font-size: 10px;
+	color: #66a; 
+}
+
+.margin-lateral{
+	padding: 0 30px;
+	color: #fff;
+}
+
+.overflow{
+	overflow: hidden;
+}
+
+.panel-self{
+	background-color: #f0f7fd;
+	margin-bottom: 20px;
+	padding: 10px 0;
+	border-left: solid 6px #d0e3f0;
+	border-right: solid 6px #d0e3f0;
+}
+
+.right{
+	float: right;
+}
+
+.scroll-mod{
+	overflow-y: hidden;
+}
+
+.padding-x{
+	padding: 0 15px;
+}
+
+.select-anio{
+	margin-bottom: 10px !important;
+	width: 100%;
+}
+
+/*
+:::::Variebles:::::
+info-autos
+info-auto-disponible
+info-lugares-total
+info-lugares-reservados
+info-lugares-disponibles
+info-reservaciones
+*/

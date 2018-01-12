@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Admin | Actividades</title>
+        <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+        <!-- bootstrap 3.0.2 -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!-- font Awesome -->
+        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <!-- Ionicons -->
+        <link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />
+        <!-- Theme style -->
+        <link href="css/AdminLTE.css" rel="stylesheet" type="text/css" />
+        <link href="css/iCheck/all.css" rel="stylesheet" type="text/css">
+
+        <!-- bootstrap wysihtml5 - text editor -->
+        <link href="css/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css" rel="stylesheet" type="text/css" />
+
+        <!-- Estilos personalizados -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body class="skin-blue">
+        <!-- header logo: style can be found in header.less -->
+        <header class="header">
+            <a href="index.html" class="logo">
+                <!-- Add the class icon to your logo image or logo icon to add the margining -->
+                Admin
+            </a>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top" role="navigation">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="navbar-btn sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <div class="navbar-right">
+                    <ul class="nav navbar-nav">
+                        <!-- Messages: style can be found in dropdown.less-->
+                        <li class="dropdown messages-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-envelope"></i>
+                            </a>                            
+                        </li>
+                        <!-- Notifications: style can be found in dropdown.less -->
+                        <li class="dropdown notifications-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-warning"></i>
+                            </a>                            
+                        </li>
+                        <!-- Tasks: style can be found in dropdown.less -->
+                        <li class="dropdown tasks-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-tasks"></i>
+                            </a>                            
+                        </li>
+                        <!-- User Account: style can be found in dropdown.less -->
+                        <li class="dropdown user user-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="glyphicon glyphicon-user"></i>
+                                <span><span class="dUserName">Jane Doe</span> <i class="caret"></i></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <!-- User image -->
+                                <li class="user-header bg-light-blue">
+                                    <img src="img/avatar3.png" class="img-circle img-usr" alt="User Image" />
+                                    <p>
+                                        <span class="dUserName">Jane Doe</span> - Web Admin
+                                        <small class="dEmpresa">Member since Nov. 2012</small>
+                                    </p>
+                                </li>
+                                <!-- Menu Body -->
+                                <li class="user-body">
+                                    <div class="col-xs-8 text-center">
+                                        <a href="#" class="dSistema"></a>
+                                    </div>
+                                    <div class="col-xs-4 text-center">
+                                        <a href="#" class="dVersion"></a>
+                                    </div>
+                                </li>
+                                <!-- Menu Footer-->
+                                <li class="user-footer">
+                                    <div class="pull-left">
+                                        <a href="#" class="btn btn-default btn-flat">Perfil</a>
+                                    </div>
+                                    <div class="pull-right">
+                                        <a href="../control/salir.php" class="btn btn-default btn-flat">Cerrar Sesión</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="wrapper row-offcanvas row-offcanvas-left">
+            <!-- Left side column. contains the logo and sidebar -->
+            <aside class="left-side sidebar-offcanvas">                
+                <!-- sidebar: style can be found in sidebar.less -->
+                <section class="sidebar">
+                    <!-- Sidebar user panel -->
+                    <div class="user-panel">
+                        <div class="pull-left image">
+                            <img src="img/avatar3.png" class="img-circle img-usr" alt="User Image" />
+                        </div>
+                        <div class="pull-left info">
+                            <p class="dSaludo">Hello</p>
+
+                            <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+                        </div>
+                    </div>
+                    <!-- search form -->
+                    <!-- <form action="#" method="get" class="sidebar-form">
+                        <div class="input-group">
+                            <input type="text" name="q" class="form-control" placeholder="Search..."/>
+                            <span class="input-group-btn">
+                                <button type='submit' name='seach' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
+                            </span>
+                        </div>
+                    </form> -->
+                    <!-- /.search form -->
+                    <!-- sidebar menu: : style can be found in sidebar.less -->
+                    <ul class="sidebar-menu">
+                        <li>
+                            <a href="index.html">
+                                <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="flyer.html">
+                                <i class="fa fa-picture-o"></i> <span>Flyer</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="actividades.html">
+                                <i class="fa fa-bolt"></i> <span>Actividades</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="galeria.html">
+                                <i class="fa fa-camera"></i> <span>Galeria</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="guias.html">
+                                <i class="fa fa-male"></i> <span>Guias</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="calendario.html">
+                                <i class="fa fa-calendar"></i> <span>Calendario</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </section>
+                <!-- /.sidebar -->
+            </aside>
+
+            <!-- Right side column. Contains the navbar and content of the page -->
+            <aside class="right-side">                
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>
+                        Actividades
+                        <input type="hidden" id="calve_id" value="1">
+                        <small>Descripción</small>
+                    </h1>
+                    <ol class="breadcrumb">
+                        <li><a href="index.html"><i class="fa fa-dashboard"></i> Home</a></li>
+                        <li><a href="#">Actividades</a></li>
+                        <li class="active">Descripción</li>
+                    </ol>
+                </section>
+
+                <!-- Main content -->
+                <section class="content">
+                    <div class="col-sm-3">
+                        <div class="row visible-xs">
+                            <div class="col-xs-12">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default">Actividades Disponibles</button>
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                        <span class="caret"></span>
+                                        <span class="sr-only">Toggle Dropdown</span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="javascript:setInfo(1);">Montañismo</a></li>
+                                        <li><a href="javascript:setInfo(2);">Trekking</a></li>
+                                        <li><a href="javascript:setInfo(3);">Escalada</a></li>
+                                        <li><a href="javascript:setInfo(4);">Entranemiento</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row hidden-xs">                            
+                            <div class="col-xs-12">
+                                <!-- small box -->
+                                <div class="small-box bg-teal">
+                                    <div class="inner">
+                                        <h4>
+                                            Montañismo
+                                        </h4>
+                                        <p>
+                                            &nbsp;
+                                        </p>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="fa fa-compass"></i>
+                                    </div>
+                                    <a href="javascript:setInfo(1);" class="small-box-footer">
+                                        Ver Actividades <i class="fa fa-arrow-circle-right"></i>
+                                    </a>
+                                </div>
+                            </div><!-- ./col -->
+                            <div class="col-xs-12">
+                                <!-- small box -->
+                                <div class="small-box bg-green">
+                                    <div class="inner">
+                                        <h4>
+                                            Trekking
+                                        </h4>
+                                        <p>
+                                            &nbsp;
+                                        </p>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="fa fa-road"></i>
+                                    </div>
+                                    <a href="javascript:setInfo(2);" class="small-box-footer">
+                                        Ver Actividades <i class="fa fa-arrow-circle-right"></i>
+                                    </a>
+                                </div>
+                            </div><!-- ./col -->
+                            <div class="col-xs-12">
+                                <!-- small box -->
+                                <div class="small-box bg-yellow">
+                                    <div class="inner">
+                                        <h4>
+                                            Escalada
+                                        </h4>
+                                        <p>
+                                            &nbsp;
+                                        </p>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="fa fa-arrow-circle-up"></i>
+                                    </div>
+                                    <a href="javascript:setInfo(3);" class="small-box-footer">
+                                        Ver Actividades <i class="fa fa-arrow-circle-right"></i>
+                                    </a>
+                                </div>
+                            </div><!-- ./col -->
+                            <div class="col-xs-12">
+                                <!-- small box -->
+                                <div class="small-box bg-purple">
+                                    <div class="inner">
+                                        <h4>
+                                            Entrenamiento
+                                        </h4>
+                                        <p>
+                                            &nbsp;
+                                        </p>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="fa fa-bullhorn"></i>
+                                    </div>
+                                    <a href="javascript:setInfo(4);" class="small-box-footer">
+                                        Ver Actividades <i class="fa fa-arrow-circle-right"></i>
+                                    </a>
+                                </div>
+                            </div><!-- ./col -->
+                        </div>
+
+                    </div>
+                    <div class="col-sm-9" id="content">
+                        <div class="box">
+                            <div class="box-header">
+                                <h3 class="box-title" id="act-title">Montañismo</h3>                                
+                                <div class="box-tools pull-right">
+                                    <button class="btn btn-primary" onclick="loadForm();">
+                                        <i class="fa fa-plus-circle"></i> Agregar
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="box-body no-padding">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 10px">#</th>
+                                            <th>Actividad</th>
+                                            <th>Opciones</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                            </div><!-- /.box-body -->
+                        </div>
+
+                    </div>
+                </section><!-- /.content -->
+            </aside><!-- /.right-side -->
+        </div><!-- ./wrapper -->
+
+
+        <!-- jQuery 1.11.2 -->
+        <script src="js/jquery-1.11.2.js"></script>
+        <!-- Bootstrap -->
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <!-- AdminLTE App -->
+        <script src="js/AdminLTE/app.js" type="text/javascript"></script>
+
+        <!-- Incluimos scripts de alimentacion -->
+        <script type="text/javascript" src="../js/backbone/user.js"></script>
+        <script type="text/javascript" src="../js/backbone/functions.js"></script>
+        <script type="text/javascript" src="../js/backbone/actividades.js"></script>
+
+        <!-- Bootstrap WYSIHTML5 -->
+        <script src="js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js" type="text/javascript"></script>
+        
+    </body>
+</html>

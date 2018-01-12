@@ -1,0 +1,195 @@
+.activityx h1 h2 p{
+	font-family: 'din_alternatebold';
+	text-transform:capitalize;
+	}
+
+.actividades h1{
+	font-size:2.1em;
+	font-family: 'din_alternatebold';
+	}
+.actividades h4{
+	font-size:1.8em;
+	font-family: 'din_alternatebold';
+	line-height:30px;
+	}
+.actividades h2{
+	font-size:1.6em;
+	font-family: 'din_alternatebold';
+	}
+.actividades p{
+	font-size:1.1em;
+	color:#fff;
+	line-height:25px;
+	font-family: 'din_alternatebold';
+	text-align:justify;
+	}
+.actividades ul li{
+	font-size:1.1em;
+	text-align:justify;
+	color:#fff;
+	line-height:25px;
+	font-family: 'din_alternatebold';
+	}
+.actividades ul.line li{
+	text-align:justify;
+	font-size:1.1em;
+	color:#fff;
+	line-height:25px;
+	list-style:armenian;
+	display:inline;
+	font-family: 'din_alternatebold';
+	}
+.menuso ul.line li{
+	text-align:justify;
+	font-size:1.2em;
+	color:#fff;
+	line-height:28px;
+	list-style:armenian;
+	display:inline;
+	margin-right:20px;
+	font-family: 'din_alternatebold';
+	}
+.menuso{
+	background-image:url(../img/actividades/fmenu.png);
+	background-repeat:no-repeat;
+	padding:19px 0 13px 10px;
+	}
+.actividades ul.line li.listados{
+	
+	}
+.costo{
+	font-size:1.6em;
+	line-height:25px;
+	color:#fff;
+	line-height:35px;
+	}
+.peketxt{
+	font-size:.8em;
+	}
+.monitos{
+	overflow:hidden;
+	}
+.moni{
+	float:left;
+	margin-right:20px;
+	}
+.globillos{
+	border-radius:20px;
+	padding:3px;
+	background-color:#fff;
+	font-size:.4em;
+	color:#000;
+	text-transform: capitalize;
+	}
+.globillos3{
+	border-radius:20px;
+	padding:3px;
+	background-color:#fff;
+	font-size:.8em;
+	color:#000;
+	text-transform: capitalize;
+	}
+.globillos2{
+	border-radius:20px;
+	padding:3px;
+	background-color:#fff;
+	font-size:.5em;
+	color:#000;
+	text-transform: capitalize;
+	}
+/***************************************************/
+.montanismo{
+	color:#87c1ca;
+	}
+.ico_montanismo ul li{
+	background: transparent url(../img/icos/ico_montanismo.png) no-repeat 0px 8px;
+	padding-top: 0px;
+	padding-bottom:0px;
+	padding-left:20px;
+
+	}
+
+.borde1{
+	border:1px solid #87c1ca;	
+	}
+.bordemonu{
+	overflow:hidden;
+	float:left;
+	border-style: dotted;
+   	border-width: 3px;
+   	border-color: #87c1ca;
+	border-radius:5px;
+	margin-right:20px;
+	}
+/***************************************************/
+/***************************************************/
+.trekking{
+	color:#9bc31e;
+	}
+.borde2{
+	border:1px solid #9bc31e;	
+	}
+.ico_trekking ul li{
+	background: transparent url(../img/icos/ico_trekking.png) no-repeat 0px 8px;
+	padding-top: 0px;
+	padding-bottom:0px;
+	padding-left:20px;
+
+	}
+.bordemonu2{
+	overflow:hidden;
+	float:left;
+	border-style: dotted;
+   	border-width: 3px;
+   	border-color: #9bc31e;
+	border-radius:5px;
+	margin-right:20px;
+	}
+/***************************************************/
+/***************************************************/
+.escalada{
+	color:#e7b041;
+	}
+.ico_escalada ul li{
+	background: transparent url(../img/icos/ico_escalada.png) no-repeat 0px 8px;
+	padding-top: 0px;
+	padding-bottom:0px;
+	padding-left:20px;
+
+	}
+.borde3{
+	border:1px solid #e7b041;	
+	}
+.bordemonu3{
+	overflow:hidden;
+	float:left;
+	border-style: dotted;
+   	border-width: 3px;
+   	border-color: #e7b041;
+	border-radius:5px;
+	margin-right:20px;
+	}
+/***************************************************/
+/***************************************************/
+.entrenamiento{
+	color:#a56fac;
+	}
+.ico_entrenamiento ul li{
+	background: transparent url(../img/icos/ico_entrenamiento.png) no-repeat 0px 8px;
+	padding-top: 0px;
+	padding-bottom:0px;
+	padding-left:20px;
+	}
+.borde4{
+	border:1px solid #a56fac;	
+	}
+.bordemonu4{
+	overflow:hidden;
+	float:left;
+	border-style: dotted;
+   	border-width: 3px;
+   	border-color: #a56fac;
+	border-radius:5px;
+	margin-right:20px;
+	}
+/***************************************************/

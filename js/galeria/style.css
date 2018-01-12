@@ -1,0 +1,114 @@
+
+#fancyAlex{
+	position: fixed;
+	top: 0;
+	left:0;
+	background: rgba(0, 0, 0, 0.8); 
+	z-index:100000; 
+	width: 100%;
+	height: 100%;
+}
+
+.imagenFrame{	
+	width: 60%;
+	margin: auto auto;
+	padding: 20px;
+	display: table-cell;
+	vertical-align: middle;	
+}
+
+.imagenFrame img{
+	border-radius: 15px;
+	width:100%; 
+	display:none;
+}
+
+.gal-controles{
+	background-color: #f00;
+}
+
+.gal-next{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	right: 20%;
+	top: 30%;
+	cursor: pointer;
+	background-image: url("large_right.png");
+}
+
+.gal-next:hover{
+	background-position: 0 40px;
+}
+
+.gal-prev{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 20%;
+	top: 30%;
+	cursor: pointer;
+	background-image: url("large_left.png");
+}
+
+.gal-prev:hover{
+	background-position: 0 40px;
+}
+
+.galClose{
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	border-radius: 50px;	
+	position: absolute;
+	top: 10px;
+	right: 30px;
+	background: url('close.png');
+	background-size: 29px 29px;
+	background-repeat: no-repeat;
+}
+.galClose2{
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	border-radius: 50px;	
+	position: absolute;
+	top: 10px;
+	right: 30px;
+	background: url('close2.png');
+	background-size: 29px 29px;
+	background-repeat: no-repeat;
+}
+.galTitulo{
+	color: #fff;
+	text-align: right;
+	text-transform: uppercase;
+	font-size: 16px;
+	background-color:#000;
+	padding:15px;
+}
+.tituone{
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 30px;
+	padding:15px;
+	font-family: 'din_alternatebold' !important;
+	}
+
+.titutwo{
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 22px;
+	padding:15px;
+	font-family: 'din_alternatebold' !important;
+	}	
+
+.tituthre{
+	text-align:center;
+	margin-top:30px;
+	}
+.tituthre img{
+	width:80px;
+	}

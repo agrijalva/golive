@@ -1,0 +1,140 @@
+<div class="box box-form">
+	<div class="box-header">
+	    <h3 class="box-title" id="frm-titulo">Montañismo</h3>
+	    <div class="box-tools pull-right">
+	    	<div class="btn-group">
+                <button type="button" class="btn btn-default" onclick="setFrm(1);">
+                	<i class="fa fa-save"></i>
+                	Guardar
+                </button>
+                <button type="button" class="btn btn-default" onclick="setFrm(1);">
+                	<i class="fa fa-fw fa-mail-reply-all"></i>
+                	Guardar y Cerrar
+                </button>
+                <button type="button" class="btn btn-default" onclick="loadList();">
+                	<i class="fa fa-fw fa-times-circle"></i>
+                	Cerrar
+                </button>
+            </div>
+	    </div>
+	</div>
+	<div class="box-body">
+		<form name="actividad" id="actividad">
+			<input type="hidden" name="~action" id="frm-action" value="insert">			
+			<input type="hidden" name="~table" value="tbl_actividad">
+			<input type="hidden" name="~where" value="act_id">
+			<input type="hidden" name="~id" id="frm-id" value="2">
+
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="col-sm-12">
+						<label>Nombre</label>
+						<input type="text" name="campo[act_nombre]" id="act_nombre" class="form-control" placeholder="Escribe tu valor" required>
+					</div>
+					<div class="col-sm-12 margen-top">
+						<label>Descripción</label>
+						<textarea name="campo[act_descripcion]" id="act_descripcion" class="form-control" required></textarea>
+					</div>
+					<div class="col-sm-12 margen-top">
+						<label>Tiempo - Costo</label>
+						<div class="row">
+							<div class="col-xs-6">
+								<div class="input-group">							
+		                            <span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
+		                            <input name="campo[act_dias_1]" id="act_dias_1" type="text" class="form-control" placeholder="Dias">
+		                        </div>
+	                        </div>
+							<div class="col-xs-6">
+								<div class="input-group">							
+		                            <span class="input-group-addon"><i class="fa fa-dollar"></i></span>
+		                            <input name="campo[act_costo_1]" id="act_costo_1" type="text" class="form-control" placeholder="Costo">
+		                        </div>
+	                        </div>
+
+						</div>
+						<div class="row margen-top">
+							<div class="col-xs-6">
+								<div class="input-group">							
+		                            <span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
+		                            <input name="campo[act_dias_2]" id="act_dias_2" type="text" class="form-control" placeholder="Dias">
+		                        </div>
+	                        </div>
+							<div class="col-xs-6">
+								<div class="input-group">							
+		                            <span class="input-group-addon"><i class="fa fa-dollar"></i></span>
+		                            <input name="campo[act_costo_2]" id="act_costo_2" type="text" class="form-control" placeholder="Costo">
+		                        </div>
+	                        </div>
+
+						</div>
+					</div>
+					<div class="col-sm-12 margen-top">
+						<label>Incluye:</label>
+		         	    <textarea name="campo[act_incluye]" id="incluye" class="textarea" placeholder="Está listo para que escribas" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+		         	    <span class="chikita">Separar con ( ; )</span>
+					</div>
+					
+					<div class="col-sm-12 margen-top">
+						<label>Condición Física</label>
+						<div class="form-group rad-style">                                    
+	                        <label>
+	                            <input type="radio" name="campo[act_condicion]" id="rad1" value="1" class="minimal-red" checked/>
+	                            No Importa
+	                        </label>
+	                        <label>
+	                            <input type="radio" name="campo[act_condicion]" id="rad2" value="2" class="minimal-red"/>
+	                            Solo un poco
+	                        </label>
+	                        <label>
+	                            <input type="radio" name="campo[act_condicion]" id="rad3" value="3" class="minimal-red"/>
+	                            Buena
+	                        </label>
+	                    </div>
+	                        
+					</div>
+
+				</div>
+
+				<div class="col-sm-6">
+					<div class="col-sm-12">
+						<label>Itinerario</label>  
+						<div id="itinerario-toolbal" style="display:none;">
+		               		<div class="form-group-te">
+			               		<a class="btn btn-default" data-wysihtml5-command="bold"><strong>B</strong></a>
+			               		<a class="btn btn-default" data-wysihtml5-command="italic"><span class="italic">i</span></a>
+			               		<a class="btn btn-default" data-wysihtml5-command="insertUnorderedList">
+			               			<span class="glyphicon glyphicon-list"></span>
+			               		</a>
+		               		</div>
+		               	</div>
+		         	    <textarea name="campo[act_itinerario]" id="itinerario" class="textarea" placeholder="Está listo para que escribas" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+					</div>
+					<div class="col-sm-12 margen-top">
+						<label>Vestimenta</label> 
+						<textarea name="campo[act_vestimenta]" id="act_vestimenta" class="form-control" style="height:120px;"></textarea>
+						<span class="chikita">Separar con ( ; )</span>
+					</div>
+					<div class="col-sm-12 margen-top">
+						<label>Equipo</label> 
+						<textarea name="campo[act_equipo]" id="act_equipo" class="form-control"></textarea>
+						<span class="chikita">Separar con ( ; )</span>
+					</div>
+
+				</div>
+			</div>
+		</form>		
+	</div>
+</div>
+
+<script type="text/javascript">
+    try{
+        $(function() {
+        	var editor2 = new wysihtml5.Editor('itinerario',{
+        		toolbar: 'itinerario-toolbal'
+        	});
+        });
+    }
+    catch(e){
+        console.log('Error: Ups no se ha encontrado el editor, devemos estar en otra seccion :)');
+    }
+</script>
